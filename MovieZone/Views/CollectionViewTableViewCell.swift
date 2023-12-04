@@ -9,6 +9,8 @@ import UIKit
 
 class CollectionViewTableViewCell: UITableViewCell {
 
+    //MARK: - Properties
+    
   static let identifier = "CollectionViewTableViewCell"
     
     private let collectionView: UICollectionView = {
@@ -20,6 +22,8 @@ class CollectionViewTableViewCell: UITableViewCell {
         return collection
     }()
 
+    //MARK: - Life Cycle
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -34,6 +38,8 @@ class CollectionViewTableViewCell: UITableViewCell {
         super.layoutSubviews()
         collectionView.frame = contentView.bounds
     }
+    
+    //MARK: - Functions
     
     private func setupView() {
         contentView.backgroundColor = .yellow

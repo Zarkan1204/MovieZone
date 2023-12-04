@@ -16,6 +16,7 @@
 		FABFFE052B14B13800DCD832 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFFE042B14B13800DCD832 /* SearchViewController.swift */; };
 		FABFFE072B14B17400DCD832 /* DowloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFFE062B14B17400DCD832 /* DowloadsViewController.swift */; };
 		FAF930C42B186A670020D7CD /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF930C32B186A670020D7CD /* CollectionViewTableViewCell.swift */; };
+		FAF930C82B187DBF0020D7CD /* FilmHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF930C72B187DBF0020D7CD /* FilmHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FABFFE042B14B13800DCD832 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		FABFFE062B14B17400DCD832 /* DowloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DowloadsViewController.swift; sourceTree = "<group>"; };
 		FAF930C32B186A670020D7CD /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		FAF930C72B187DBF0020D7CD /* FilmHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				FAF930C32B186A670020D7CD /* CollectionViewTableViewCell.swift */,
+				FAF930C72B187DBF0020D7CD /* FilmHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				FABFFE052B14B13800DCD832 /* SearchViewController.swift in Sources */,
 				FABFFE072B14B17400DCD832 /* DowloadsViewController.swift in Sources */,
 				FABFFE002B14AF2000DCD832 /* MainTabBarViewController.swift in Sources */,
+				FAF930C82B187DBF0020D7CD /* FilmHeaderView.swift in Sources */,
 				FAF930C42B186A670020D7CD /* CollectionViewTableViewCell.swift in Sources */,
 				FA0143802B10734C00A00700 /* AppDelegate.swift in Sources */,
 				FA0143822B10734C00A00700 /* SceneDelegate.swift in Sources */,
