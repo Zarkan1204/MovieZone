@@ -9,6 +9,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    let sectionTitles: [String] = ["Adventure", "Action", "Horror", "Comedy", "TV Series"]
+    
     //MARK: - Properties
     
     private let homeTableView: UITableView = {
@@ -43,9 +45,12 @@ class HomeViewController: UIViewController {
         
         let headerView = FilmHeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
         homeTableView.tableHeaderView = headerView
+        homeTableView.showsVerticalScrollIndicator = false
         
     }
     
+    //MARK: - Navigation Bar
+
     private func configureNavBar() {
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "play.rectangle"), style: .done, target: self, action: nil)
@@ -61,7 +66,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 10
+        return sectionTitles.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -86,6 +91,16 @@ extension HomeViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 40
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sectionTitles[section]
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let header = view as? UITableViewHeaderFooterView else { return }
+        header.textLabel?.font = .systemFont(ofSize: 16, weight: .semibold)
+        header.textLabel?.textColor = .white
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

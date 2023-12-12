@@ -11,6 +11,7 @@
 		FA0143822B10734C00A00700 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0143812B10734C00A00700 /* SceneDelegate.swift */; };
 		FA0143892B10734D00A00700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0143882B10734D00A00700 /* Assets.xcassets */; };
 		FA01438C2B10734D00A00700 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA01438A2B10734D00A00700 /* LaunchScreen.storyboard */; };
+		FA2BF2362B1DF99000EEFDBF /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BF2352B1DF99000EEFDBF /* APICaller.swift */; };
 		FABFFE002B14AF2000DCD832 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFFDFF2B14AF2000DCD832 /* MainTabBarViewController.swift */; };
 		FABFFE032B14B0A800DCD832 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFFE022B14B0A800DCD832 /* HomeViewController.swift */; };
 		FABFFE052B14B13800DCD832 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFFE042B14B13800DCD832 /* SearchViewController.swift */; };
@@ -26,6 +27,7 @@
 		FA0143882B10734D00A00700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA01438B2B10734D00A00700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA01438D2B10734D00A00700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2BF2352B1DF99000EEFDBF /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		FABFFDFF2B14AF2000DCD832 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		FABFFE022B14B0A800DCD832 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FABFFE042B14B13800DCD832 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				FA0143932B107AB900A00700 /* Application */,
+				FA2BF2332B1DF94900EEFDBF /* Managers */,
 				FAF930C02B18695B0020D7CD /* Models */,
 				FAF930C12B1869630020D7CD /* Views */,
 				FAF930C22B1869700020D7CD /* ViewsModels */,
@@ -91,6 +94,14 @@
 				FA01438D2B10734D00A00700 /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FA2BF2332B1DF94900EEFDBF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BF2352B1DF99000EEFDBF /* APICaller.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		FABFFE012B14B07600DCD832 /* Controllers */ = {
@@ -201,6 +212,7 @@
 				FABFFE072B14B17400DCD832 /* DowloadsViewController.swift in Sources */,
 				FABFFE002B14AF2000DCD832 /* MainTabBarViewController.swift in Sources */,
 				FAF930C82B187DBF0020D7CD /* FilmHeaderView.swift in Sources */,
+				FA2BF2362B1DF99000EEFDBF /* APICaller.swift in Sources */,
 				FAF930C42B186A670020D7CD /* CollectionViewTableViewCell.swift in Sources */,
 				FA0143802B10734C00A00700 /* AppDelegate.swift in Sources */,
 				FA0143822B10734C00A00700 /* SceneDelegate.swift in Sources */,
